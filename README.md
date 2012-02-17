@@ -44,6 +44,7 @@ The SNS transport uses [awssum](https://github.com/appsattic/node-awssum) to gen
 * __subject:__ Subject for notifications. (default: "Winston Error Report")
 * __message:__ Message of notifications. Uses placeholders for level (%l), error message (%e), and metadata (%m). (default: "Level '%l' Error:\n%e\n\nMetadata:\n%m")
 * __level:__ lowest level this transport will log. (default: `info`)
+* __handleExceptions:__ set to true to have this transport handle exceptions. (default: `false`)
 
 Feel free to file issues in this github tracker, I check it often.
 
