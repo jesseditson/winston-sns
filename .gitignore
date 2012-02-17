@@ -1,3 +1,4 @@
 node_modules
 npm-debug.log
 .tm_properties
+test.js
