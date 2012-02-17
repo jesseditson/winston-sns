@@ -1,4 +1,4 @@
-A email transport for [winston][0].
+An Amazon SNS transport for [winston][0].
 
 ## Installation
 
