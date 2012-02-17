@@ -1,7 +1,7 @@
 {
   "name": "winston-sns",
   "description": "A Simple Notification System Transport for winston (http://www.github.com/flatiron/winston)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Jesse Ditson <jesse.ditson@gmail.com>",
   "contributors": [],
   "repository": {
