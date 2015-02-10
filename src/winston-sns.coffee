@@ -23,8 +23,6 @@ class winston.transports.SNS extends winston.Transport
 
     @options = o = _.defaults(options, optional)
 
-    console.log o
-
     snsOpts =
       apiVersion: '2010-03-31'
 
@@ -51,10 +49,7 @@ class winston.transports.SNS extends winston.Transport
       Message: sub(@options.message)
       TopicArn: @options.topic_arn
 
-    console.log snsOpts
-
     @sns.publish snsOpts, (err, data) ->
-      console.error err if err
       callback err, data
 
     return
