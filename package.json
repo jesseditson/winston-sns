@@ -8,16 +8,34 @@
     "type": "git",
     "url": "http://github.com/jesseditson/winston-sns.git"
   },
-  "keywords": ["logging", "sysadmin", "tools", "winston", "sns", "amazon", "notification"],
+  "keywords": [
+    "logging",
+    "sysadmin",
+    "tools",
+    "winston",
+    "sns",
+    "amazon",
+    "notification"
+  ],
   "dependencies": {
-	"underscore" : "1.3.x",
-	"awssum" : "0.7.x"
+    "aws-sdk": "^2.1.8",
+    "underscore": "1.3.x"
   },
   "devDependencies": {
     "winston": "0.4.x",
-    "vows": "0.5.x"
+    "vows": "0.5.x",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-coffee": "~0.9.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-coffeelint": "~0.0.8",
+    "grunt": "~0.4.2"
   },
   "main": "./lib/winston-sns",
-  "scripts": { "test": "vows test/*-test.js --spec" },
-  "engines": { "node": ">= 0.4.0" }
+  "scripts": {
+    "test": "vows test/*-test.js --spec"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  }
 }
