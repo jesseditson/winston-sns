@@ -18,24 +18,24 @@
     "notification"
   ],
   "dependencies": {
-    "aws-sdk": "^2.1.8",
+    "aws-sdk": "2.1.x",
     "underscore": "1.3.x"
   },
   "devDependencies": {
     "winston": "0.4.x",
     "vows": "0.5.x",
-    "matchdep": "~0.3.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-coffee": "~0.9.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-coffeelint": "~0.0.8",
-    "grunt": "~0.4.2"
+    "matchdep": "0.3.x",
+    "grunt-contrib-watch": "0.5.x",
+    "grunt-contrib-coffee": "0.9.x",
+    "grunt-contrib-clean": "0.5.x",
+    "grunt-coffeelint": "0.0.x",
+    "grunt": "0.4.x"
   },
   "main": "./lib/winston-sns",
   "scripts": {
     "test": "vows test/*-test.js --spec"
   },
   "engines": {
-    "node": ">= 0.4.0"
+    "node": "0.4.x"
   }
 }
