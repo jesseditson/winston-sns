@@ -4,7 +4,7 @@
 # (C) 2012, Jesse Ditson
 # MIT License
 
-_ = require 'underscore'
+_defaults = require 'lodash.defaults'
 AWS = require 'aws-sdk'
 winston = require 'winston'
 util = require 'util'
@@ -21,7 +21,7 @@ class winston.transports.SNS extends winston.Transport
     if missing.length
       throw new Error "winston-sns requires the following options: #{missing.join(',')}"
 
-    @options = o = _.defaults(options, optional)
+    @options = o = _defaults(options, optional)
 
     snsOpts =
       apiVersion: '2010-03-31'
