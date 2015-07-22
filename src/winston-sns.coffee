@@ -37,7 +37,7 @@ class winston.transports.SNS extends winston.Transport
     return
 
   log: (level, msg = '', meta, callback) ->
-    if this.silent
+    if @silent
       return callback(null, true)
 
     json = @options.json
