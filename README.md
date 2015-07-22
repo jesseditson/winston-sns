@@ -42,6 +42,8 @@ The SNS transport uses [Amazon's AWS SDK for JavaScript](https://www.npmjs.com/p
 * __level:__ lowest level this transport will log. (default: `info`)
 * __json:__ use json instead of a prettier (human friendly) string for meta information in the notification. (default: `false`)
 * __handleExceptions:__ set to true to have this transport handle exceptions. (default: `false`)
+* __silent:__ Boolean flag indicating whether to suppress output (default: `false`)
+
 
 Feel free to file issues in this github tracker, I check it often.
 
