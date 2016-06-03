@@ -48,7 +48,7 @@ class winston.transports.SNS extends winston.Transport
       str.replace('%l', level).replace('%e', msg).replace '%m', m
 
     snsOpts =
-      Subject: sub(@options.subject)
+      Subject: sub(@options.subject).substring(0, 99)
       Message: sub(@options.message)
       TopicArn: @options.topic_arn
 
