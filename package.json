@@ -1,7 +1,7 @@
 {
   "name": "winston-sns",
   "description": "A Simple Notification System Transport for winston (http://www.github.com/flatiron/winston)",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Jesse Ditson <jesse.ditson@gmail.com>",
   "contributors": [
     "Matt Bowman <mbowman@yext.com>"
@@ -38,6 +38,6 @@
     "test": "vows test/*-test.js --spec"
   },
   "engines": {
-    "node": "0.4.x"
+    "node": ">=0.4.x"
   }
 }
