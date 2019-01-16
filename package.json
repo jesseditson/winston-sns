@@ -1,7 +1,7 @@
 {
   "name": "winston-sns",
   "description": "A Simple Notification System Transport for winston (http://www.github.com/flatiron/winston)",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "author": "Jesse Ditson <jesse.ditson@gmail.com>",
   "contributors": [
     "Matt Bowman <mbowman@yext.com>"
@@ -20,10 +20,10 @@
     "notification"
   ],
   "dependencies": {
-    "aws-sdk": "^2.1.x",
     "lodash.defaults": "3.1.x"
   },
   "devDependencies": {
+    "aws-sdk": "^2.1.x",
     "winston": "0.4.x",
     "vows": "0.5.x",
     "matchdep": "0.3.x",
@@ -32,6 +32,9 @@
     "grunt-contrib-clean": "0.5.x",
     "grunt-coffeelint": "0.0.x",
     "grunt": "0.4.x"
+  },
+  "peerDependencies": {
+    "aws-sdk": "^2.1.x"
   },
   "main": "./lib/winston-sns",
   "scripts": {

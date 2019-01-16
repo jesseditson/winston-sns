@@ -10,6 +10,12 @@ An Amazon SNS transport for [winston][0].
 ```
 (or add it to your package.json)
 
+If you are running in an environment where `aws-sdk` is not installed globally, you might need to also install `aws-sdk`.
+
+``` sh
+  $ npm install aws-sdk
+```
+
 ## Usage
 ``` js
   var winston = require('winston'),
